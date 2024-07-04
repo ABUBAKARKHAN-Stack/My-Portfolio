@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Abubakar Khan</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="/src/input.css">
+    <link rel="stylesheet" href="/src/media.css">
+    <link rel="stylesheet" href="/src/custom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class='bg-[#18181b] text-white  font-poppins'>
+    <!-- Nav Section Starts Here -->
+    <nav class="max-h-[450px]  w-full flex justify-between items-center lg:px-20 px-10 py-6 ">
+        <div>
+            <img src="/assests/image/Nav-logo.jpeg" alt="NAV_LOGO" class="rounded-[50%] max-w-[100px] cursor-pointer">
+        </div>
+        <div class="hidden lg:flex lg:gap-12 text-[15px]">
+            <a href="#" class="nav-link skills-link">Skills</a>
+            <a href="#" class="nav-link profile-link">Profile Highlights</a>
+            <a href="#" class="nav-link what-we-do-link">What We Do</a>
+            <a href="#" class="nav-link about-link">About</a>
+        </div>
+        <div class="button hidden lg:flex lg:flex-row-reverse lg:gap-6">
+            <button class="theme-toggler-desktop ">
+                <svg class="icon-desktop w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff">
+                    <path
+                        d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z">
+                    </path>
+                </svg>
+            </button>
+            <a href="/dist/contact.html#contact-section">
+                <button
+                    class="transition-button px-5 py-3 text-[14px] text-[#ccc] bg-[#1d4ed8] rounded-sm hover:bg-[#1e40af] outline-none">Hire
+                    Me</button>
+            </a>
+        </div>
+        <button class="block lg:hidden cursor-pointer outline-none" id="ham-icon">
+            <div class="ham-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </button>
+    </nav>
+    <!-- Nav Section Ends Here -->
+
+    <!-- Mobile-Menu Starts Here -->
+    <div class=" mobile-menu  lg:hidden flex flex-col gap-3 items-start shadow-md p-4">
+        <div class="w-full h-[0.5px] bg-gray-200"></div>
+
+        <span
+            class="hover:bg-slate-50 hover:text-black h-12 w-[98%] rounded-md flex justify-start items-center px-6 py-8 transition-all delay-[0.2s] ease-in-out">
+            <a href="#" class="nav-link nav-link-mob skills-mobile ">Skills</a>
+        </span>
+        <span
+            class="hover:bg-slate-50 hover:text-black h-12 w-[98%] rounded-md flex justify-start items-center px-6 py-8 transition-colors delay-[0.3s] ease-in-out">
+            <a href="#" class="nav-link nav-link-mob profile-mobile">Profile Highlights</a>
+        </span>
+        <span
+            class="hover:bg-slate-100 hover:text-black h-12 w-[98%] rounded-md flex justify-start items-center px-6 py-8 transition-all delay-[0.2s] xease-in-out">
+            <a href="#" class="nav-link nav-link-mob what-we-do-mobile">What We Do</a>
+        </span>
+        <span
+            class="hover:bg-slate-50  hover:text-black h-12 w-[98%] rounded-md flex justify-start items-center px-6 py-8 transition-all delay-[0.2s] ease-in-out">
+            <a href="#" class="nav-link nav-link-mob about-mobile  text-center">About</a>
+        </span>
+
+        <span
+            class="hover:bg-slate-200 hover:text-black h-12 w-[98%] rounded-md flex justify-start items-center px-6 py-8 transition-all delay-[0.2s] ease-in-out">
+            <button class="theme-toggler-sm ">
+                <svg class="icon-sm w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff">
+                    <path
+                        d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z">
+                    </path>
+                </svg>
+            </button>
+        </span>
+
+
+        <div class="w-full h-[0.5px] bg-gray-200"></div>
+    </div>
+    <!-- Mobile-Menu Ends Here -->
+
+    <!-- About Me Section Starts Here -->
+
+
+
+    <div class="container lg:px-40 md:px-10 px-4 mx-auto ">
+        <div class="header flex flex-col-reverse md:flex-row items-center justify-center gap-5">
+            <!-- Left Column: Text Content -->
+            <div class="md:w-1/2 w-full">
+                <p class="text-4xl font-semibold">Hi, I'm <strong class="webkit">Abubakar</strong>, a Web Developer</p>
+                <p class=" -mb-4 mt-4 font-semibold uppercase border-b-[1px] border-dashed border-[#fff]">
+                    About Me:</p>
+                <p class="text-sm  mt-4">I am an enthusiastic intermediate student with a passion for web
+                    development. I enjoy creating responsive and visually appealing web applications, and I am
+                    constantly learning and improving my skills.</p>
+            </div>
+
+            <!-- Right Column: Image -->
+            <div class="md:w-1/2 w-full flex justify-center">
+                <span class="blur2 mt-20"></span>
+                <span class="blur2 mt-20"></span>
+                <img src="/assests/image/dev.jpg" alt="header-img" class="object-cover w-[50%] bg-fixed rounded-full">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ================================ SKILLS Section Starts Here ================== -->
+    <section class="skill-sec  flex justify-center flex-col items-center mt-40 md:mt-48 lg:mt-56 gap-12 max-w-full">
+        <div class="uppercase text-2xl md:text-3xl font-semibold">Skills and Expertise</div>
+        <p class="lg:w-[70%] md:w-[80%] w-full text-[15px]  text-center text-wrap">Showcasing proficiency in
+            HTML5, CSS3, Tailwind CSS, and JavaScript, highlighting a strong foundation in creating responsive, dynamic,
+            and visually appealing web applications.
+        </p>
+
+        <!-- SKILL CARDS STARTS FROM HERE -->
+        <div
+            class="cards grid grid-flow-row place-content-center place-items-center lg:grid-cols-4 md:grid-cols-2 grid-cols-2  gap-6">
+            <!-- Card 1: HTML5 -->
+            <span class="card bg-[#27272a] rounded-[15px] h-48 w-56 p-3 flex flex-col">
+                <div class="bg-[#1e40af] h-9 w-9 py-1.5 rounded-[4px] flex items-center justify-center">
+                    <img src="/assests/svg/html5-fill.svg" alt="HTML5 Icon" class="w-7">
+                </div>
+                <div class="card-text flex flex-col gap-2 text-[12px] flex-grow">
+                    <p class="font-semibold mt-2">HTML5</p>
+                    <p class="text-[#ccc]">Skilled in HTML5, I create clean, organized, and accessible web pages with
+                        ease. I also make the best use of semantic tags for SEO optimization.
+                    </p>
+                </div>
+            </span>
+            <!-- End Card 1 -->
+
+            <!-- Card 2: CSS3 -->
+            <span class="card bg-[#27272a]  rounded-[15px] h-48 w-56 p-3 flex flex-col">
+                <div class="bg-[#1e40af] h-9 w-9 py-1.5 rounded-[4px] flex items-center justify-center">
+                    <img src="/assests/svg/css3-fill.svg" alt="CSS3 Icon" class="w-7">
+                </div>
+                <div class="card-text flex flex-col gap-2 text-[12px] flex-grow">
+                    <p class="font-semibold mt-2">CSS3</p>
+                    <p class="text-[#ccc]">Experienced with CSS3, skilled at making stylish, responsive, and visually
+                        appealing web pages with ease.</p>
+                </div>
+            </span>
+            <!-- End Card 2 -->
+
+            <!-- Card 3: Tailwind CSS -->
+            <span class="card bg-[#27272a] h-48 w-56 p-3 rounded-[15px] flex flex-col">
+                <div class="bg-[#1e40af] h-9 w-9 py-1.5 rounded-[4px] flex items-center justify-center">
+                    <img src="/assests/svg/tailwind-css-fill.svg" alt="Tailwind CSS Icon" class="w-7">
+                </div>
+                <div class="card-text grid gap-2 text-[12px] ">
+                    <p class="font-semibold mt-2">Tailwind CSS</p>
+                    <p class="text-[#ccc]">Experienced with Tailwind CSS, utilizing its best UI classes and prioritizing
+                        a mobile-first approach.</p>
+                </div>
+            </span>
+            <!-- End Card 3 -->
+
+            <!-- Card 4: JavaScript -->
+            <span class="card bg-[#27272a] h-48  w-56 p-3 rounded-[15px] flex flex-col">
+                <div class="bg-[#1e40af] h-9 w-9 py-1.5 rounded-[4px] flex items-center justify-center">
+                    <img src="/assests/svg/javascript-fill.svg" alt="JavaScript Icon" class="w-7">
+                </div>
+                <div class="card-text flex flex-col gap-2 text-[12px] flex-grow">
+                    <p class="font-semibold mt-2">JavaScript</p>
+                    <p class="text-[#ccc]">I showcase my expertise in JavaScript by creating websites that captivate
+                        users with interactive and dynamic features.</p>
+                </div>
+            </span>
+            <!-- End Card 4 -->
+        </div>
+
+        <!-- SKILL CARDS ENDS FROM HERE -->
+    </section>
+    <!-- ================================ SKILLS Section Ends Here ================== -->
+
+
+
+    <!-- Profile Highlights Section -->
+
+    <section class="profile-highlights flex justify-center flex-col items-center mt-40 md:mt-48 gap-12 max-w-full">
+        <!-- Section Title -->
+        <h2 class="text-3xl font-semibold text-center text-wrap uppercase">Profile Highlights</h2>
+        <p class="lg:w-[70%] md:w-[80%] w-full text-[15px]  text-center text-wrap">Discover the key aspects
+            of my journey, showcasing my experience, education, projects, and future goals, all reflecting my commitment
+            to continuous learning and growth.</p>
+        <div class="grid grid-flow-row place-content-center place-items-center grid-cols-1 gap-6 w-full">
+            <!-- Experience Card -->
+            <span
+                class="profile-card bg-[#27272a] text-white rounded-lg flex flex-col justify-between h-full w-[90%] lg:w-[60%]">
+                <div class="p-6 flex flex-col justify-center items-start">
+                    <!-- Experience Title -->
+                    <h3 class="text-xl font-semibold mb-2 flex items-center gap-2">
+                        <!-- Icon container -->
+                        <div class="bg-[#000017] h-9 w-9 py-1.5 rounded-[4px] flex items-center justify-center">
+                            <img src="/assests/svg/expert.svg" alt="Experience" class="w-6">
+                        </div>
+                        Experience
+                    </h3>
+                    <!-- Experience Description -->
+                    <p class="profile-text profile-text-1 text-[#ccc] text-sm">
+                        <!-- See More Link -->
+                    <div class="mt-2 text-[#ccc] text-[12px] flex gap-1 ">
+                        <p> Click </p>
+                        <q
+                            class="see-more-1 hover:text-blue-600 hover:transition-colors cursor-pointer hover:underline">See
+                            More</q>
+                        <p class="view-hide-1 "> to view details </p>
+                    </div>
+                    </p>
+                </div>
+            </span>
+
+            <!-- Education Card -->
+            <span
+                class="profile-card bg-[#27272a] text-white rounded-lg flex flex-col justify-between h-full w-[90%] lg:w-[60%]">
+                <div class="p-6 flex flex-col justify-center items-start">
+                    <!-- Education Title -->
+                    <h3 class="text-xl font-semibold mb-2 flex items-center gap-2">
+                        <!-- Icon container -->
+                        <div class="bg-[#000017] h-9 w-9 py-1.5 rounded-[4px] flex items-center justify-center">
+                            <img src="/assests/svg/edu.svg" alt="Education" class="w-6">
+                        </div>
+                        Education
+                    </h3>
+                    <!-- Education Description -->
+                    <p class="profile-text profile-text-2 text-[#ccc] text-sm">
+                        <!-- See More Link -->
+                    <div class="mt-2 text-[#ccc] text-[12px] flex gap-1 ">
+                        <p> Click </p>
+                        <q
+                            class="see-more-2 hover:text-blue-600 hover:transition-colors cursor-pointer hover:underline">See
+                            More</q>
+                        <p class="view-hide-2 "> to view details </p>
+                    </div>
+                    </p>
+                </div>
+            </span>
+
+            <!-- Projects Card -->
+            <span
+                class="profile-card bg-[#27272a] text-white rounded-lg flex flex-col justify-between h-full w-[90%] lg:w-[60%]">
+                <div class="p-6 flex flex-col justify-center items-start">
+                    <!-- Projects Title -->
+                    <h3 class="text-xl font-semibold mb-2 flex items-center gap-2">
+                        <!-- Icon container -->
+                        <div class="bg-[#000017] h-9 w-9 py-1.5 rounded-[4px] flex items-center justify-center">
+                            <img src="/assests/svg/project.svg" alt="Projects" class="w-6">
+                        </div>
+                        Projects
+                    </h3>
+                    <!-- Projects Description -->
+                    <p class="profile-text profile-text-3 text-[#ccc] text-sm">
+                        <!-- See More Link -->
+                    <div class="mt-2 text-[#ccc] text-[12px] flex gap-1 ">
+                        <p> Click </p>
+                        <q
+                            class="see-more-3 hover:text-blue-600 hover:transition-colors cursor-pointer hover:underline">See
+                            More</q>
+                        <p class="view-hide-3 "> to view details </p>
+                    </div>
+                    </p>
+                </div>
+            </span>
+
+            <!-- Future Goals Card -->
+            <span
+                class="profile-card bg-[#27272a] text-white rounded-lg flex flex-col justify-between h-full w-[90%] lg:w-[60%]">
+                <div class="p-6 flex flex-col justify-center items-start">
+                    <!-- Future Goals Title -->
+                    <h3 class="text-xl font-semibold mb-2 flex items-center gap-2">
+                        <!-- Icon container -->
+                        <div class="bg-[#000017] h-9 w-9 py-1.5 rounded-[4px] flex items-center justify-center">
+                            <img src="/assests/svg/focus-2-line.svg" alt="Future Goals" class="w-6">
+                        </div>
+                        Future Goals
+                    </h3>
+                    <!-- Future Goals Description -->
+                    <p class="profile-text profile-text-4 text-[#ccc] text-sm">
+                        <!-- See More Link -->
+                    <div class="mt-2 text-[#ccc] text-[12px] flex gap-1 ">
+                        <p> Click </p>
+                        <q
+                            class="see-more-4 hover:text-blue-600 hover:transition-colors cursor-pointer hover:underline">See
+                            More</q>
+                        <p class="view-hide-4 "> to view details </p>
+                    </div>
+                    </p>
+                </div>
+            </span>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- <div class="mt-10 text-center">
+        <a href="contact.html"
+            class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-colors">Get in
+            Touch</a>
+    </div> -->
+
+
+
+    <!-- About Me Section Ends Here -->
+
+    <!-- What We Do Section Starts Here -->
+    <section id="what-we-do-section" class="what-we-do py-20  mt-40 md:mt-48 lg:mt-10">
+        <div class="container  mx-auto px-6 flex flex-col items-center justify-center  gap-12">
+
+            <h2 class="text-3xl font-semibold text-center text-wrap">What We Do</h2>
+            <p class="lg:w-[70%] md:w-[80%] w-full text-[15px]  text-center text-wrap">Explore our range
+                of services, including web development, UI/UX design, and consulting, all aimed at creating
+                innovative and user-friendly digital experiences.
+            </p>
+
+            <div class="flex flex-col md:flex-row md:justify-around items-center gap-10 ">
+                <div class="what-we-do-card w-full md:w-1/3 text-center  ">
+                    <h3 class="text-2xl font-semibold text-white">Web Development</h3>
+                    <p class="mt-4 text-[#ccc] ">We create responsive, visually appealing websites using the latest
+                        technologies like
+                        Tailwind CSS and JavaScript.</p>
+                </div>
+                <div class="what-we-do-card w-full md:w-1/3 text-center ">
+                    <h3 class="text-2xl font-semibold text-white">UI/UX Design</h3>
+                    <p class="mt-4 text-[#ccc] ">Our focus on UI/UX ensures user-friendly and aesthetically pleasing
+                        interfaces.</p>
+                </div>
+                <div class="what-we-do-card w-full md:w-1/3 text-center">
+                    <h3 class="text-2xl font-semibold text-white">Consulting</h3>
+                    <p class="mt-4 text-[#ccc] ">We provide consulting services to help you choose the right front-end
+                        technologies
+                        and strategies for your projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- What We Do Section Ends Here -->
+
+
+    <footer class="footer-sec-about-us ">
+        <div
+            class="h-[400px] w-full  mt-40 md:mt-0  grid lg:grid-cols-3 lg:grid-rows-1 grid-cols-2 grid-rows-1  gap-10 place-content-center place-items-center">
+            <div class="grid col-span-2 lg:col-span-1 place-content-center place-items-center gap-4 text-[14px]">
+                <span class="blur3 light-blur"></span>
+                <span class="blur3 light-blur "></span>
+                <a href="#"> <img src="/assests/image/Nav-logo.jpeg" alt="NAV_LOGO" class="main-logo"></a>
+                <p class="text-[18px] font-semibold text-wrap text-center">Front End Web Developer</p>
+                <div class="flex gap-4">
+                    <div class="logo-transition logo-light h-8 w-8 rounded-[50%] flex justify-center items-center">
+                        <a href="https://github.com/ABUBAKARKHAN-Stack" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ccc" style="width: 20px;"
+                                class="profile-links">
+                                <path
+                                    d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="logo-transition logo-light h-8 w-8 rounded-[50%] flex justify-center items-center">
+                        <a href="https://www.instagram.com/abubakarxd7/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ccc" style="width: 20px;"
+                                class="profile-links">
+                                <path
+                                    d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="logo-transition logo-light h-8 w-8 rounded-[50%] flex justify-center items-center">
+                        <a href="https://www.facebook.com/abubakar.tanoli.961" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ccc" style="width: 20px;"
+                                class="profile-links">
+                                <path
+                                    d="M12.001 2C6.47813 2 2.00098 6.47715 2.00098 12C2.00098 16.9913 5.65783 21.1283 10.4385 21.8785V14.8906H7.89941V12H10.4385V9.79688C10.4385 7.29063 11.9314 5.90625 14.2156 5.90625C15.3097 5.90625 16.4541 6.10156 16.4541 6.10156V8.5625H15.1931C13.9509 8.5625 13.5635 9.33334 13.5635 10.1242V12H16.3369L15.8936 14.8906H13.5635V21.8785C18.3441 21.1283 22.001 16.9913 22.001 12C22.001 6.47715 17.5238 2 12.001 2Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-3">
+                <h3 class="mb-5 font-semibold md:text-[20px]">About Us</h3>
+                <a href="/dist/index.html" class="text-sm trans">Home</a>
+                <a href="#" class="text-sm trans">About Me</a>
+                <a href="#" class="text-sm trans what-we-do-footer-link">What We Do</a>
+            </div>
+            <div class="flex flex-col gap-3">
+                <h3 class="mb-5 font-semibold md:text-[20px]">Contact Info</h3>
+                <a href="/dist/contact.html" class="text-sm trans">Contact</a>
+                <a href="/dist/terms.html" class="text-sm trans">Terms & Conditions</a>
+                <a href="/dist/terms.html#privacy-section" class="text-sm trans">Privacy Policy</a>
+            </div>
+        </div>
+        <p class="w-full text-center text-wrap text-[0.85rem] lg:-mt-12 lg:py-0 py-2 mt-10">Copyright &copy;
+            2024 CodeWithAbubakar.com</p>
+    </footer>
+
+    <script src="/src/script.js"></script>
+    <script src="/src/scroll.js"></script>
+    <script src="/src/scrollToSpecific.js"></script>
+    <script src="/src/profilecards.js"></script>
+    <script src="/src/themeChange.js"></script>
+</body>
+
+</html>

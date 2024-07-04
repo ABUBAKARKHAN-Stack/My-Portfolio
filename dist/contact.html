@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - CodeWithAbubakar</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="/src/input.css">
+    <link rel="stylesheet" href="/src/media.css">
+    <link rel="stylesheet" href="/src/custom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-[#18181b] font-poppins text-white">
+    <!-- Nav Section Starts Here -->
+    <nav class="max-h-[450px]  w-full flex justify-between items-center lg:px-20 px-10 py-6 ">
+        <div>
+            <img src="/assests/image/Nav-logo.jpeg" alt="NAV_LOGO" class="rounded-[50%] max-w-[100px] cursor-pointer">
+        </div>
+        <div class="hidden lg:flex lg:gap-12 text-[15px]">
+            <a href="#" class="nav-link contact-me-link">Contact Me</a>
+            <a href="#" class="nav-link faqs-link">FAQS</a>
+            <a href="#" class="nav-link location-link">Location</a>
+            <a href="#" class="nav-link about-link">About</a>
+        </div>
+        <div class="button hidden lg:flex lg:flex-row-reverse lg:gap-6">
+            <button class="theme-toggler-desktop">
+                <svg class="icon-desktop w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff">
+                    <path
+                        d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z">
+                    </path>
+                </svg>
+            </button>
+            <a href="/dist/contact.html#contact-section">
+                <button
+                    class="transition-button px-5 py-3 text-[14px] text-[#ccc] bg-[#1d4ed8] rounded-sm hover:bg-[#1e40af] outline-none">Hire
+                    Me</button></a>
+        </div>
+        <button class="block lg:hidden cursor-pointer" id="ham-icon">
+            <div class="ham-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </button>
+    </nav>
+    <!-- Nav Section Ends Here -->
+
+    <!-- Mobile-Menu Starts Here -->
+    <div class=" mobile-menu  lg:hidden flex flex-col gap-3 items-start shadow-md p-4">
+        <div class="w-full h-[0.5px] bg-gray-200"></div>
+        <span
+            class="hover:bg-slate-50  hover:text-black h-12 w-[98%] rounded-md flex justify-start items-center px-6 py-8 transition-all delay-[0.2s] ease-in-out">
+            <a href="#" class="nav-link nav-link-mob  text-center contact-me-link-mobile">Contact Me</a>
+        </span>
+        <span
+            class="hover:bg-slate-50 hover:text-black h-12 w-[98%] rounded-md flex justify-start items-center px-6 py-8 transition-all delay-[0.2s] ease-in-out">
+            <a href="#" class="nav-link nav-link-mob faqs-link-mobile ">FAQS</a>
+        </span>
+        <span
+            class="hover:bg-slate-50 hover:text-black h-12 w-[98%] rounded-md flex justify-start items-center px-6 py-8 transition-colors delay-[0.3s] ease-in-out">
+            <a href="#" class="nav-link nav-link-mob location-link-mobile">Location</a>
+        </span>
+        <span
+            class="hover:bg-slate-100 hover:text-black h-12 w-[98%] rounded-md flex justify-start items-center px-6 py-8 transition-all delay-[0.2s] ease-in-out">
+            <a href="#" class="nav-link nav-link-mob about-link-mobile">About</a>
+        </span>
+        <span
+        class="hover:bg-slate-200 hover:text-black h-12 w-[98%] rounded-md flex justify-start items-center px-6 py-8 transition-all delay-[0.2s] ease-in-out">
+        <button class="theme-toggler-sm ">
+            <svg class="icon-sm w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff">
+                <path
+                    d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z">
+                </path>
+            </svg>
+        </button>
+    </span>
+        <div class="w-full h-[0.5px] bg-gray-200"></div>
+    </div>
+    <!-- Mobile-Menu Ends Here -->
+
+    <!-- ===================================================== Contact Form Section Starts Here ========================================== -->
+
+    <section id="contact-section" class="contact-Me  mt-40 md:mt-48 lg:mt-20 ">
+        <div class="container mx-auto ">
+            <div class="text-center grid gap-6">
+                <h2 class="text-3xl font-semibold ">Contact Me</h2>
+                <p class="lg:w-[70%] md:w-[80%] w-full text-[15px]  text-center text-wrap mx-auto">Feel free
+                    to reach out for collaborations or just a friendly chat.</p>
+            </div>
+
+            <div class="flex lg:flex-row flex-col justify-center items-center w-full">
+                <div class=" w-full flex justify-center items-center">
+                    <img src="/assests/image/header.png" alt="head-img"
+                        class="head-img-2 mb-0 lg:mb-20 object-contain ">
+                </div>
+                <form id="contact-form" class="w-full flex flex-col justify-center items-center gap-4">
+                    <div class="flex items-center gap-5 w-4/5">
+
+                        <input type="text" id="name" name="name" required placeholder="Your Full Name..."
+                            class="input flex-grow mt-2 p-2.5 h-14 rounded-[8px] bg-[#27272b] text-white text-sm placeholder:text-white placeholder:text-sm">
+                    </div>
+                    <div class="flex items-center gap-5 w-4/5">
+
+                        <input type="email" id="email" name="email" required placeholder="Your Email Address..."
+                            class="input flex-grow mt-2 p-2.5 h-14  rounded-[8px] bg-[#27272b] text-white text-sm placeholder:text-white placeholder:text-sm">
+                    </div>
+                    <div class="flex items-center gap-5 w-4/5">
+
+                        <textarea name="message" id="message" rows="4" placeholder="Your Message..."
+                            class="input flex-grow mt-2 p-2.5 rounded-[8px] bg-[#27272b] text-white text-sm placeholder:text-white placeholder:text-sm"></textarea>
+                    </div>
+
+                    <div class="flex justify-center w-4/5">
+                        <button type="submit" class="send-msg-btn text-white px-6 py-3 rounded-lg bg-blue-500 outline-none">Send
+                            Message</button>
+                    </div>
+                    <div class="success"></div>
+                    <div class="error"></div>
+                </form>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================== Contact Form Section Ends Here=========================================== -->
+
+    <!--====================================================== FAQ SECTION STARTS HERE ================================================= -->
+
+    <section
+        class="faq-sec  flex justify-center flex-col mt-40 md:mt-48 lg:mt-0 items-center gap-6 max-w-full">
+        <!-- Section header -->
+        <h3 class="text-3xl font-semibold">Frequently Asked Questions</h3>
+        <p class="lg:w-[70%] md:w-[80%] w-full text-[15px] text-center text-wrap mx-auto">
+            Here are some of the most common questions I receive from clients. If you don't find your question here,
+            feel free to contact me directly.
+        </p>
+        <!-- FAQ grid container -->
+        <div class="grid place-content-center place-items-center grid-cols-1 mt-6 gap-6 w-full">
+            <!-- FAQ item 1 -->
+            <span class="faq bg-[#27272a] rounded-lg flex flex-col justify-center h-full w-[90%] lg:w-[70%]">
+                <div class="py-6 px-4 flex justify-between items-center">
+                    <h4 class="text-white text-xl">What services do you offer?</h4>
+                    <button class="plus-icon-1 text-4xl cursor-pointer text-white">+</button>
+                </div>
+                <p class="faq-answer-1 px-4 mb-2 text-[#ccc] "></p>
+            </span>
+            <!-- FAQ item 2 -->
+            <span class="faq bg-[#27272a] rounded-lg flex flex-col justify-center h-full w-[90%] lg:w-[70%]">
+                <div class="py-6 px-4 flex justify-between items-center">
+                    <h4 class="text-white text-xl">How can I hire you?</h4>
+                    <button class="plus-icon-2 text-4xl cursor-pointer text-white">+</button>
+                </div>
+                <p class="faq-answer-2 px-4 mb-2 text-[#ccc] "></p>
+            </span>
+            <!-- FAQ item 3 -->
+            <span class="faq bg-[#27272a] rounded-lg flex flex-col justify-center h-full w-[90%] lg:w-[70%]">
+                <div class="py-6 px-4 flex justify-between items-center">
+                    <h4 class="text-white text-xl">What is your typical turnaround time for a project?</h4>
+                    <button class="plus-icon-3 text-4xl cursor-pointer text-white">+</button>
+                </div>
+                <p class="faq-answer-3 px-4 mb-2 text-[#ccc] "></p>
+            </span>
+            <!-- FAQ item 4 -->
+            <span class="faq bg-[#27272a] rounded-lg flex flex-col justify-center h-full w-[90%] lg:w-[70%]">
+                <div class="py-6 px-4 flex justify-between items-center">
+                    <h4 class="text-white text-xl">Do you provide ongoing maintenance and support?</h4>
+                    <button class="plus-icon-4 text-4xl cursor-pointer text-white">+</button>
+                </div>
+                <p class="faq-answer-4 px-4 mb-2 text-[#ccc] "></p>
+            </span>
+            <!-- FAQ item 5 -->
+            <span class="faq bg-[#27272a] rounded-lg flex flex-col justify-center h-full w-[90%] lg:w-[70%]">
+                <div class="py-6 px-4 flex justify-between items-center">
+                    <h4 class="text-white text-xl">What information do you need from me to get started?</h4>
+                    <button class="plus-icon-5 text-4xl cursor-pointer text-white">+</button>
+                </div>
+                <p class="faq-answer-5 px-4 mb-2 text-[#ccc] "></p>
+            </span>
+            <!-- FAQ item 6 -->
+            <span class="faq bg-[#27272a] rounded-lg flex flex-col justify-center h-full w-[90%] lg:w-[70%]">
+                <div class="py-6 px-4 flex justify-between items-center">
+                    <h4 class="text-white text-xl">Can you help with SEO?</h4>
+                    <button class="plus-icon-6 text-4xl cursor-pointer text-white">+</button>
+                </div>
+                <p class="faq-answer-6 px-4 mb-2 text-[#ccc] "></p>
+            </span>
+
+            <!-- FAQ item 7 -->
+
+            <span class="faq bg-[#27272a] rounded-lg flex flex-col justify-center h-full w-[90%] lg:w-[70%]">
+                <div class="py-6 px-4 flex justify-between items-center">
+                    <h4 class="text-white text-xl">What are your payment terms?</h4>
+                    <button class="plus-icon-7 text-4xl cursor-pointer text-white">+</button>
+                </div>
+                <p class="faq-answer-7 px-4 mb-2 text-[#ccc] "></p>
+            </span>
+
+            <!-- FAQ item 8 -->
+
+            <span class="faq bg-[#27272a] rounded-lg flex flex-col justify-center h-full w-[90%] lg:w-[70%]">
+                <div class="py-6 px-4 flex justify-between items-center">
+                    <h4 class="text-white text-xl">Can you redesign my existing website?</h4>
+                    <button class="plus-icon-8 text-4xl cursor-pointer text-white">+</button>
+                </div>
+                <p class="faq-answer-8 px-4 mb-2 text-[#ccc] "></p>
+            </span>
+
+            <!-- FAQ item 9 -->
+
+            <span class="faq bg-[#27272a] rounded-lg flex flex-col justify-center h-full w-[90%] lg:w-[70%]">
+                <div class="py-6 px-4 flex justify-between items-center">
+                    <h4 class="text-white text-xl">What technologies do you use?</h4>
+                    <button class="plus-icon-9 text-4xl cursor-pointer text-white">+</button>
+                </div>
+                <p class="faq-answer-9 px-4 mb-2 text-[#ccc] "></p>
+            </span>
+
+            <!-- FAQ item 10 -->
+            <span class="faq bg-[#27272a] rounded-lg flex flex-col justify-center h-full w-[90%] lg:w-[70%]">
+                <div class="py-6 px-4 flex justify-between items-center">
+                    <h4 class="text-white text-xl">Can you integrate third-party services into my website?</h4>
+                    <button class="plus-icon-10 text-4xl cursor-pointer text-white">+</button>
+                </div>
+                <p class="faq-answer-10 px-4 mb-2 text-[#ccc] "></p>
+            </span>
+
+        </div>
+    </section>
+
+    <!--====================================================== FAQ SECTION ENDS HERE ================================================= -->
+
+    <!-- ============================== IFRAME SECTION =============================== -->
+    <section class="location-sec w-full flex flex-col items-center mt-40 md:mt-48 lg:mt-20">
+        <h2 class="text-3xl font-bold mb-4">Our Location</h2>
+        <p class="text-sm text-center mb-6">Visit us at our office located at:</p>
+        <div class="w-full flex justify-center items-center">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d823.8188262214694!2d67.04940027690101!3d24.844716753542237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33c2c534b33bb%3A0x664caabb90ec6d8a!2sR2VX%2BQXM%2C%20Kala%20Pull%20Rd%2C%20Naval%20Officers%20Residential%20Estate%20Karachi%20Cantonment%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e1!3m2!1sen!2s!4v1719864120246!5m2!1sen!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="w-[70vw] rounded-[17px]"></iframe>
+        </div>
+    </section>
+
+
+    <footer class="footer-sec-contact-page">
+        <div
+            class="h-[400px] w-full  mt-40 md:mt-0  grid lg:grid-cols-3 lg:grid-rows-1 grid-cols-2 grid-rows-1  gap-10 place-content-center place-items-center">
+            <div class="grid col-span-2 lg:col-span-1 place-content-center place-items-center gap-4 text-[14px]">
+                <span class="blur3 light-blur"></span>
+                <span class="blur3 light-blur "></span>
+                <a href="#"> <img src="/assests/image/Nav-logo.jpeg" alt="NAV_LOGO" class="main-logo"></a>
+                <p class="text-[18px] font-semibold text-wrap text-center">Front End Web Developer</p>
+                <div class="flex gap-4">
+                    <div class="logo-transition logo-light h-8 w-8 rounded-[50%] flex justify-center items-center">
+                        <a href="https://github.com/ABUBAKARKHAN-Stack" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ccc" style="width: 20px;"
+                                class="profile-links">
+                                <path
+                                    d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="logo-transition logo-light h-8 w-8 rounded-[50%] flex justify-center items-center">
+                        <a href="https://www.instagram.com/abubakarxd7/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ccc" style="width: 20px;"
+                                class="profile-links">
+                                <path
+                                    d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="logo-transition logo-light h-8 w-8 rounded-[50%] flex justify-center items-center">
+                        <a href="https://www.facebook.com/abubakar.tanoli.961" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ccc" style="width: 20px;"
+                                class="profile-links">
+                                <path
+                                    d="M12.001 2C6.47813 2 2.00098 6.47715 2.00098 12C2.00098 16.9913 5.65783 21.1283 10.4385 21.8785V14.8906H7.89941V12H10.4385V9.79688C10.4385 7.29063 11.9314 5.90625 14.2156 5.90625C15.3097 5.90625 16.4541 6.10156 16.4541 6.10156V8.5625H15.1931C13.9509 8.5625 13.5635 9.33334 13.5635 10.1242V12H16.3369L15.8936 14.8906H13.5635V21.8785C18.3441 21.1283 22.001 16.9913 22.001 12C22.001 6.47715 17.5238 2 12.001 2Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-3">
+                <h3 class="mb-5 font-semibold md:text-[20px]">About Us</h3>
+                <a href="/dist/index.html" class="text-sm trans">Home</a>
+                <a href="/dist/about.html" class="text-sm trans">About Me</a>
+                <a href="/dist/about.html#what-we-do-section" class="text-sm trans what-we-do-footer-link">What We
+                    Do</a>
+            </div>
+            <div class="flex flex-col gap-3">
+                <h3 class="mb-5 font-semibold md:text-[20px]">Contact Info</h3>
+                <a href="#" class="text-sm trans">Contact</a>
+                <a href="/dist/terms.html" class="text-sm trans">Terms & Conditions</a>
+                <a href="/dist/terms.html#privacy-section" class="text-sm trans">Privacy Policy</a>
+            </div>
+        </div>
+        <p class="w-full text-center text-wrap text-[0.85rem] lg:-mt-12 lg:py-0 py-2 mt-10">Copyright &copy;
+            2024 CodeWithAbubakar.com</p>
+    </footer>
+
+    <script src="/src/script.js"></script>
+    <script src="/src/formsend.js"></script>
+    <script src="/src/scrollToSpecific.js"></script>
+    <script src="/src/scroll.js"></script>
+    <script src="/src/faqAns.js"></script>
+    <script src="/src/themeChange.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "LbUk6nUGUvlsI3b0D",
+            });
+        })();
+    </script>
+</body>
+
+</html>

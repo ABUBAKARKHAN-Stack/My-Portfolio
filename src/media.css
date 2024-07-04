@@ -1,0 +1,45 @@
+/* Media query for devices with a maximum width of 432px */
+@media (max-width: 485px) {
+    /* Styling for card container in single column layout */
+    .cards {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+    
+    /* Styling for individual cards */
+    .card{
+        width: 80vw; /* Card width is 80% of the viewport width */
+    }
+       
+    /* Styling for card text */
+    .card-text{
+        width: 100%; /* Card text width is 100% of the card */
+    }
+}
+
+/* Media query for devices with a maximum width of 767px */
+@media (max-width: 767px) {
+    /* Styling for pricing card container in single column layout */
+    .pricing-cards {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+    
+    .pricing-card{
+        max-width: 80vw;
+    }
+}
+
+/* Media query for devices with a minimum width of 1025px */
+@media(max-width: 1025px) {
+    /* Styling for footer section */
+     .footer-sec{
+        margin-top: 5rem !important; /* Top margin of the footer section is 5rem */
+   }
+ } 
+
+/* Media query for devices with a minimum width of 1280px */
+ @media(min-width: 1280px) {
+   /* Styling for footer section */ 
+    .footer-sec{
+        margin-top: -20rem !important;
+    }
+ } 
